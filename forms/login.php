@@ -1,6 +1,6 @@
 <?php
 // include headerTag.php file
-include ('/forms/common/headerTag.php');
+include ('forms/common/headerTag.php');
 ?>
 
 <section class="h-100">
