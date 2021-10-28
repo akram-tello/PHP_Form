@@ -67,7 +67,7 @@ include_once __DIR__ . '/common/headerTag.php';
 					</div>
 					<div class="card-footer py-3 border-0">
 						<div class="text-center">
-							Already have an account? <a href="index.php" class="text-dark">Login</a>
+							Already have an account? <a href="../index.php" class="text-dark">Login</a>
 						</div>
 					</div>
 				</div>
