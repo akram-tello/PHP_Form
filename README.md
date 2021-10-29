@@ -35,6 +35,6 @@ Then see it works!
 
 ## screenShots
 ### 💻 web view
-![](./assets/screenshot/login-form.PNG)
-![](./assets/screenshot/register-form.PNG)
-![](./assets/screenshot/forgot-form.PNG)
+![](https://php-login-forms.herokuapp.com/assets/screenshoot/login-form.png)
+![](https://php-login-forms.herokuapp.com/register-form.png)
+![](https://php-login-forms.herokuapp.com/forgot-form.png)

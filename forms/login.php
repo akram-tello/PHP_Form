@@ -50,6 +50,9 @@ include ('forms/common/headerTag.php');
                         <div class="text-center">
                             Don't have an account? <a href="./forms/register.php" class="text-dark">Create One</a>
                         </div>
+                        <div class="mt-1 text-center">
+                            see the source code on <a href="https://github.com/akram-tello/PHP_Form" class="text-dark">Github</a>
+                        </div>
                     </div>
                 </div>
             </div>

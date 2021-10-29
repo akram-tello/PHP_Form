@@ -33,6 +33,9 @@ include_once __DIR__ . '/common/headerTag.php';
                         <div class="text-center">
                             Remember your password? <a href="../index.php" class="text-dark">Login</a>
                         </div>
+                        <div class="mt-1 text-center">
+                            see the source code on <a href="https://github.com/akram-tello/PHP_Form" class="text-dark">Github</a>
+                        </div>
                     </div>
                 </div>
             </div>
