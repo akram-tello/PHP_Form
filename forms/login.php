@@ -40,7 +40,7 @@ include ('forms/common/headerTag.php');
                                     <input type="checkbox" name="remember" id="remember" class="form-check-input">
                                     <label for="remember" class="form-check-label">Remember Me</label>
                                 </div>
-                                <button id="login" name="login" type="submit" class="btn btn-primary ms-auto">
+                                <button type="submit" class="btn btn-primary ms-auto">
                                     Login
                                 </button>
                             </div>
