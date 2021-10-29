@@ -1,5 +1,5 @@
 <?php
-require "database/config/constants.php";
+require "database/db_connection.php";
 ?>
 
 <?php

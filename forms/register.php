@@ -1,6 +1,9 @@
 <?php
 // include headerTag.php file
 include_once __DIR__ . '/common/headerTag.php';
+
+// include backend server
+include ('..\backend\server.php');
 ?>
 
 <section class="h-100">
@@ -13,9 +16,10 @@ include_once __DIR__ . '/common/headerTag.php';
 				<div class="card shadow-lg">
 					<div class="card-body p-5">
 						<h1 class="fs-4 card-title fw-bold mb-4">Register</h1>
-						<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+						<form id="regiester_form" method="POST" action="./register.php" class="needs-validation" novalidate="" autocomplete="off">
+							<?php include ( '../backend/errors.php' ) ?>
 							<div class="mb-3">
-								<label class="mb-2 text-muted" for="name">First Name</label>
+								<label class="mb-2 text-muted" for="first_name">First Name</label>
 								<input id="first_name" type="text" class="form-control" name="first_name" value="" required autofocus>
 								<div class="invalid-feedback">
 									First Name is required	
@@ -23,7 +27,7 @@ include_once __DIR__ . '/common/headerTag.php';
 							</div>
 
 							<div class="mb-3">
-								<label class="mb-2 text-muted" for="name">Last Name</label>
+								<label class="mb-2 text-muted" for="last_name">Last Name</label>
 								<input id="last_name" type="text" class="form-control" name="last_name" value="" required autofocus>
 								<div class="invalid-feedback">
 									Last Name is required	
@@ -39,16 +43,24 @@ include_once __DIR__ . '/common/headerTag.php';
 							</div>
 
 							<div class="mb-3">
-								<label class="mb-2 text-muted" for="email">Phone Number</label>
-								<input id="phone_number" type="text" class="form-control" name="phone" value="" required>
+								<label class="mb-2 text-muted" for="phonenumber">Phone Number</label>
+								<input id="phonenumber" type="text" class="form-control" name="phonenumber" value="" required>
 								<div class="invalid-feedback">
 									Phone Number is invalid
 								</div>
 							</div>
 
 							<div class="mb-3">
-								<label class="mb-2 text-muted" for="password">Password</label>
-								<input id="password" type="password" class="form-control" name="password" required>
+								<label class="mb-2 text-muted" for="password_1">Password</label>
+								<input id="password_1" type="password" class="form-control" name="password_1" required>
+								<div class="invalid-feedback">
+									Password is required
+								</div>
+							</div>
+
+							<div class="mb-3">
+								<label class="mb-2 text-muted" for="password_2">Confirm Password</label>
+								<input id="password_2" type="password" class="form-control" name="password_2" required>
 								<div class="invalid-feedback">
 									Password is required
 								</div>
@@ -59,7 +71,7 @@ include_once __DIR__ . '/common/headerTag.php';
 							</p>
 
 							<div class="align-items-center d-flex">
-								<button type="submit" class="btn btn-primary ms-auto">
+								<button id="register" name="register" type="submit" class="btn btn-primary ms-auto">
 									Register	
 								</button>
 							</div>
