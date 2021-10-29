@@ -8,7 +8,7 @@ include ('forms/common/headerTag.php');
         <div class="row justify-content-sm-center h-100">
             <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
                 <div class="text-center my-5">
-                    <img src="../assets/img/login.png" alt="login" width="100">
+                    <img src="../forms/assets/login.png" alt="login" width="100">
                 </div>
                 <div class="card shadow-lg">
                     <div class="card-body p-5">
