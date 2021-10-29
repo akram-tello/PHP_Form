@@ -1,4 +1,7 @@
-<!--  -->
+<?php
+// include backend server
+include ('..\backend\server.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,7 +102,7 @@
 	</div>
 </section>
 
-<script src="../validation/login.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</body>
-</html>
+<?php
+// include scriptTag.php file
+include_once __DIR__ . '/common/scriptTag.php';
+?>
