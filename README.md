@@ -35,6 +35,6 @@ Then see it works!
 
 ## screenShots
 ### 💻 web view
-![](./assets/screenshot/login form.PNG)
-![](./assets/screenshot/register form.PNG)
-![](./assets/screenshot/forgot form.PNG)
+![](./assets/screenshot/login-form.PNG)
+![](./assets/screenshot/register-form.PNG)
+![](./assets/screenshot/forgot-form.PNG)
