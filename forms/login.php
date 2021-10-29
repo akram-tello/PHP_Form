@@ -40,7 +40,7 @@ include ('forms/common/headerTag.php');
                                     <input type="checkbox" name="remember" id="remember" class="form-check-input">
                                     <label for="remember" class="form-check-label">Remember Me</label>
                                 </div>
-                                <button type="submit" class="btn btn-primary ms-auto">
+                                <button id="login" name="login" type="submit" class="btn btn-primary ms-auto">
                                     Login
                                 </button>
                             </div>
@@ -62,5 +62,5 @@ include ('forms/common/headerTag.php');
 
 <?php
 // include scriptTag.php file
-include ('forms/common/scriptTag.php');
+include_once __DIR__ . '/common/scriptTag.php';
 ?>

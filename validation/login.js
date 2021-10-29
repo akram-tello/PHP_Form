@@ -18,29 +18,55 @@
 })()
 
 
-	const valid = $("#regiester_form").valid();
+$('#register').click(function (e) {
+	e.preventDefault();
+	console.log("hi")
+	const Toast = Swal.mixin({
+		toast: true,
+		position: 'top-end',
+		showConfirmButton: false,
+		timer: 3000,
+		timerProgressBar: true,
+		didOpen: (toast) => {
+			toast.addEventListener('mouseenter', Swal.stopTimer)
+			toast.addEventListener('mouseleave', Swal.resumeTimer)
+		}
+	})
 
-	if (valid) {
-		$('#register').click(function (e) {
-			e.preventDefault();
-			console.log("hi")
-			const Toast = Swal.mixin({
-				toast: true,
-				position: 'top-end',
-				showConfirmButton: false,
-				timer: 3000,
-				timerProgressBar: true,
-				didOpen: (toast) => {
-					toast.addEventListener('mouseenter', Swal.stopTimer)
-					toast.addEventListener('mouseleave', Swal.resumeTimer)
-				}
-			})
+	Toast.fire({
+		icon: 'success',
+		title: 'Registered  in successfully'
+	})
 
-			Toast.fire({
-				icon: 'success',
-				title: 'Signed in successfully'
-			})
-		})
-	} else {
-		console.log("not")
-	}
+	setTimeout(() => {
+	window.location.replace("/index.php");
+	}, 4000)
+	
+})
+
+$('#login').click(function (e) {
+	e.preventDefault();
+	console.log("hi")
+	const Toast = Swal.mixin({
+		toast: true,
+		position: 'top-end',
+		showConfirmButton: false,
+		timer: 3000,
+		timerProgressBar: true,
+		didOpen: (toast) => {
+			toast.addEventListener('mouseenter', Swal.stopTimer)
+			toast.addEventListener('mouseleave', Swal.resumeTimer)
+		}
+	})
+
+	Toast.fire({
+		icon: 'success',
+		title: 'Signed in successfully'
+	})
+
+	setTimeout(() => {
+	window.location.replace("/welcome.php");
+	}, 4000)
+	
+})
+
